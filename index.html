@@ -1,0 +1,274 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IPhub — Главная</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- PRELOADER with animated logo -->
+  <div id="preloader" class="preloader" aria-hidden="false">
+    <div class="preloader-inner">
+      <div class="prelogo">
+        <span class="prelogo-text" data-text="IPhub">&nbsp;</span>
+      </div>
+      <div class="preloader-sub">Загрузка сайта...</div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">
+        <img src="C:\Users\Алексей\Downloads\87f0a6e8-b700-4516-a888-4db7922713c9.png" alt="IPhub">
+        <div class="brand-wrap">
+          <div class="brand">IPhub</div>
+          <div class="tag">Интеллектуальная собственность</div>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#solutions">Решения</a></li>
+          <li><a href="#clients">Клиенты</a></li>
+          <li><a href="#team">Команда</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <button id="burger" class="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Off-canvas menu (slides in from right) -->
+  <aside id="offcanvas" class="offcanvas" aria-hidden="true">
+    <button class="offcanvas-close" aria-label="Закрыть меню">✕</button>
+    <nav class="offcanvas-nav">
+      <ul>
+        <li><a href="#solutions">Решения</a></li>
+        <li><a href="#clients">Клиенты</a></li>
+        <li><a href="#team">Команда</a></li>
+        <li><a href="#contact">Контакты</a></li>
+        <li><a class="btn btn-primary ripple" href="#contact">Оставить заявку</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <div id="overlay" class="overlay" hidden></div>
+
+  <!-- Progress bar (top) -->
+  <div class="progress-wrap"><div class="progress" id="scrollProgress"></div></div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <div class="kicker">IPhub</div>
+          <h1 class="hero-title typewrite" data-text="Интеллектуальная собственность — надёжные решения для бизнеса">&nbsp;</h1>
+          <p class="hero-desc">Мы защищаем идеи и помогаем монетизировать результаты. Полный цикл услуг: от патентования до лицензирования и сопровождения споров.</p>
+
+          <div class="hero-actions">
+            <button id="openReport" class="btn btn-primary ripple">Показать мгновенный отчёт</button>
+            <a class="btn btn-outline ripple" href="#solutions">Подробнее</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card reveal">
+              <div class="stat-row">
+                <div class="num counter" data-target="308">0</div>
+                <div class="label">Поданных заявок</div>
+              </div>
+              <div class="stat-row">
+                <div class="num counter" data-target="2500">0</div>
+                <div class="label">Решений</div>
+              </div>
+              <div class="stat-row">
+                <div class="num counter" data-target="1150">0</div>
+                <div class="label">Клиентов</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTIONS -->
+    <section class="section solutions" id="solutions">
+      <div class="container">
+        <h2>Решения для бизнеса</h2>
+        <p class="section-lead">Модульные решения: регистрация, мониторинг, защита, аналитика и коммерциализация прав.</p>
+        <div class="cards-grid">
+          <article class="card tilt">
+            <div class="card-icon">📦</div>
+            <h3>Регистрация</h3>
+            <p>Подача заявок в ведомства, подготовка полного пакета документов.</p>
+          </article>
+          <article class="card tilt">
+            <div class="card-icon">🔍</div>
+            <h3>Поиск и анализ</h3>
+            <p>Патентные исследования, freedom-to-operate и мониторинг рынка.</p>
+          </article>
+          <article class="card tilt">
+            <div class="card-icon">🛡️</div>
+            <h3>Защита прав</h3>
+            <p>Юридическая поддержка в спорах и механизм реагирования на нарушения.</p>
+          </article>
+          <article class="card tilt">
+            <div class="card-icon">📈</div>
+            <h3>Аналитика</h3>
+            <p>Оценка эффективности портфеля, ROI и рисков.</p>
+          </article>
+          <article class="card tilt">
+            <div class="card-icon">⚖️</div>
+            <h3>Лицензирование</h3>
+            <p>Договоры, тарифы и контроль исполнения условий лицензий.</p>
+          </article>
+          <article class="card tilt">
+            <div class="card-icon">🤝</div>
+            <h3>Коллаборации</h3>
+            <p>Совместные проекты и коммерциализация технологий.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLIENTS -->
+    <section class="section clients" id="clients">
+      <div class="container">
+        <h2>Клиенты и партнёры</h2>
+        <p class="section-lead">Нам доверяют — от стартапов до крупных компаний.</p>
+        <div class="clients-logos reveal">
+          <img src="C:\Users\Алексей\Downloads\e74a93bd-45cf-4809-a84a-7f555f6df9e5.png" alt="client">
+          <img src="C:\Users\Алексей\Downloads\8993f432-ba5a-413c-a9fc-413119f459e7.png" alt="client">
+          <img src="C:\Users\Алексей\Downloads\9becc292-60c6-4f9a-98fe-82b82f16c544.png" alt="client">
+          <img src="C:\Users\Алексей\Downloads\6c10062b-d0aa-47ba-b9e4-b4d1726f4fa9.png" alt="client">
+          <img src="C:\Users\Алексей\Downloads\eb0c2b18-7e6e-4dc4-bfc0-40016a0b99ba.png" alt="client">
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section team" id="team">
+      <div class="container">
+        <h2>Наша команда</h2>
+        <p class="section-lead">Патентные поверенные, юристы и аналитики.</p>
+        <div class="team-grid">
+          <article class="person reveal">
+            <img src="data:image/jpeg;base64,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" alt="Иван Иванов">
+            <h4>Иван Иванов</h4>
+            <div class="role">Патентный поверенный</div>
+          </article>
+          <article class="person reveal">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeoQOOvpdYo_VRY-QRQb_NF-7a4jRU_2LYYw&s" alt="Алексей Смирнов">
+            <h4>Алексей Смирнов</h4>
+            <div class="role">Юрист</div>
+          </article>
+          <article class="person reveal">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLg8OiZd8XzhDODo5DYyBwkCk_gIeqfiT6xg&s" alt="Елена Ким">
+            <h4>Елена Ким</h4>
+            <div class="role">Аналитик</div>
+          </article>
+          <article class="person reveal">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNhrqAV5p8qVUxiupFj_iQom2F3IDlZhHs3w&s" alt="Мария Петрова">
+            <h4>Мария Петрова</h4>
+            <div class="role">Коммерческий директор</div>
+          </article>
+          <article class="person reveal">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCOAsVVg5G9gWDFDRaot4Y6mStHw7KkkR5uQ&s" alt="Анна Ли">
+            <h4>Анна Ли</h4>
+            <div class="role">Маркетолог</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section reviews">
+      <div class="container">
+        <h2>Отзывы</h2>
+        <div class="reviews-list">
+          <blockquote class="review reveal">«Быстро оформили патент, помогли защитить технологию.»<cite> — Андрей, CTO</cite></blockquote>
+          <blockquote class="review reveal">«Профессионально, понятно и в срок.»<cite> — Ольга, основатель</cite></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-left">
+          <h2>Оставьте заявку</h2>
+          <p>Мы свяжемся в течение рабочего дня и подготовим индивидуальное решение.</p>
+          <form action="#" id="contactForm">
+            <label>Имя<input type="text" name="name" required></label>
+            <label>Телефон<input type="tel" name="phone" required></label>
+            <label>Email<input type="email" name="email" required></label>
+            <label>Сообщение<textarea name="message" rows="4"></textarea></label>
+            <button class="btn btn-primary ripple" type="submit">Отправить</button>
+          </form>
+        </div>
+        <aside class="contact-right">
+          <h3>Контакты</h3>
+          <p>Телефон: <a href="tel:+77000000000">+7 (700) 000-00-00</a></p>
+          <p>Email: <a href="mailto:info@iphub.example">info@iphub.example</a></p>
+          <p>Адрес: г. Алматы, Казахстан</p>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <img src="img/logo-120.png" alt="IPhub">
+        <div class="muted">© 2025 IPhub. Все права защищены.</div>
+      </div>
+      <div class="footer-right">
+        <nav class="footer-links">
+          <a href="#">Политика</a>
+          <a href="#">Условия</a>
+          <a href="#">Карьера</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: Instant Report -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-overlay"></div>
+    <div class="modal-window">
+      <button class="modal-close" aria-label="close">✕</button>
+      <h3>Мгновенный отчёт</h3>
+      <p>Актуальные метрики по вашим проектам и портфелю.</p>
+      <div class="report-grid">
+        <div class="report-item">
+          <div class="report-num counter" data-target="308">0</div>
+          <div class="report-label">Поданных заявок</div>
+        </div>
+        <div class="report-item">
+          <div class="report-num counter" data-target="2500">0</div>
+          <div class="report-label">Решений</div>
+        </div>
+        <div class="report-item">
+          <div class="report-num counter" data-target="1150">0</div>
+          <div class="report-label">Клиентов</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
